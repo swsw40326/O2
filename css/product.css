@@ -1,0 +1,204 @@
+* {
+    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.img-fluid {
+    width: 415px !important;
+    height: auto !important;
+}
+
+.header {
+    box-shadow: 3px 7px 7px rgb(151 151 151 / 70%);
+}
+
+.bg-green {
+    background-color: #2e3e3b;
+}
+
+.divider {
+    border: 0;
+    color: #333;
+    height: 2px;
+    background-image: #333;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.header i {
+    color: white;
+    margin: .35rem;
+    transition: .5s;
+    opacity: .5;
+}
+
+.header i:hover {
+    opacity: 1;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    margin-left: 80px;
+}
+
+.details .discount {
+    margin: 1.3rem 0;
+}
+
+.details .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.details .buy {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: #a15128;
+    transition: .25s;
+}
+
+.details .buy:hover {
+    color: #a15128;
+    background-color: white;
+    border-color: #a15128;
+}
+
+.details .count-arena {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.count-arena .counter {
+    display: flex;
+}
+
+.count-arena label {
+    font-size: .5rem;
+}
+
+.count-arena .counter button {
+    color: rgb(117, 117, 117);
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 3px;
+}
+
+.count-arena .counter button:hover {
+    color: #a15128;
+}
+
+.count-arena .counter button:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.count-arena .counter button:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+.count-arena input {
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: none;
+    height: 38px
+}
+
+.count-arena input:focus {
+    outline: none;
+}
+
+.image-arena {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured {
+    max-width: 500px;
+    max-height: 600px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.thumbnail {
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.activeSlide {
+    opacity: 1;
+}
+
+#slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#slider {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.arrow {
+    cursor: pointer;
+    transform: rotate(90deg);
+}

@@ -1,0 +1,89 @@
+* {
+    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.category-title {
+    padding: 0 0 0 0;
+    color: #a15520;
+    font-weight: bold !important;
+    margin-left: 12px;
+    margin-bottom: 26px;
+}
+
+.img-fluid {
+    max-width: 93% !important;
+    height: auto !important;
+}
+
+.header {
+    box-shadow: 3px 7px 7px rgb(151 151 151 / 70%);
+}
+
+.bg-green {
+    background-color: #2e3e3b;
+}
+
+.divider {
+    border: 0;
+    color: #333;
+    height: 2px;
+    background-image: #333;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.header i {
+    color: white;
+    margin: .35rem;
+    transition: .5s;
+    opacity: .5;
+}
+
+.header i:hover {
+    opacity: 1;
+}
+
+.product-link {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.product-link:hover {
+    color: black;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product .description {
+    margin: 2.75%;
+    font-weight: bold;
+}
+
+.product .description .title {
+    font-size: .85rem;
+}
+
+.product .description .price {
+    color: #ae6d1c;
+    font-size: 1.1rem;
+    text-align: center;
+}
