@@ -8,51 +8,64 @@
     <title>O2</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark sticky-top navbar-expand-md bg-green justify-content-center header">
-        <div class="container">
-            <div class="navbar-brand d-flex w-50 me-auto">
-                <img src="./img/LOGO.svg" class="logo" alt="">
+    <div id="menu" class="menu">
+        <img src="./img/menu-R.png" alt="">
+        <div class="menu-area">
+            <div class="category">
+                <a href="./category/手環.html" class="link menu-link">
+                    bracelet
+                </a>
+                <a href="./category/耳環.html" class="link menu-link">
+                    earring
+                </a>
             </div>
+            <div class="category-2">
+                <a href="./category/戒指.html" class="link menu-link">
+                    ring
+                </a>
+                <a href="./category/項鍊.html" class="link menu-link">
+                    necklace
+                </a>
+                <a href="./category/髮帶.html" class="link menu-link" style="padding-bottom: 26px;">
+                    headband
+                </a>
+            </div>
+            <a href="#" class="link menu-link">
+                all
+            </a>
+            <a href="#" class="link menu-link" style="margin-bottom: -30px;">
+                signin/register
+            </a>
+        </div>
+    </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+    <img class="header-img" src="./img/頭頂.png" alt="">
+    <nav class="navbar navbar-dark sticky-top navbar-expand bg-green justify-content-center header">
+        <div class="container">
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                <ul class="navbar-nav w-100 justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./category/手環.html">手環</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./category/耳環.html">耳環</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./category/戒指.html">戒指</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./category/項鍊.html">項鍊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./category/髮帶.html">髮帶</a>
-                    </li>
-                </ul>
-
                 <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                    <li><input type="text"></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-search fa-rotate-90"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-comment"></i></a>
+                        <a href="#" class="nav-link" onclick="toggleMenu()"><i class="fas fa-crown"></i></a>
                     </li>
-                    
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="far fa-comment-dots"></i></a>
+                    </li>
+
                     <li class="nav-item">
                         <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
                     </li>
@@ -61,78 +74,72 @@
         </div>
     </nav>
 
-    <div id="product-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+    <img class="background-img" src="./img/封面.png" alt="">
 
-        <div class="carousel-inner">
-          <div class="carousel-item item active">
-            <img src="./img/輪播/01-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item item">
-            <img src="./img/輪播/14-1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item item">
-            <img src="./img/輪播/15-1.png" class="d-block w-100" alt="...">
-          </div>
+    <div class="product-area bg-green">
+        <img class="paper" src="img/牛皮紙0.png" alt="">
+        <div class="paper-area">
+            <img class="logo" src="img/牛皮紙上的LOGO.png" alt="">
+            <div class="category">headband</div>
+            <div class="product">
+                <img src="img/飾品/髮帶/502-2.jpg" alt="">
+                <div class="desc">
+                    <div class="title">藍色絲綢緞帶</div>
+                    <div class="price">$ 280</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/飾品/髮帶/501-1.jpg" alt="">
+                <div class="desc">
+                    <div class="title">蕾絲珍珠髮帶</div>
+                    <div class="price">$ 240</div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="cards">
-        <a href="#" class="link product-link">
-            <div class="product-card" data-content="Hello World">
-                <div class="product-img">
-                    <img src="./img/意象/01.jpg" alt="">
-                </div>
-                <hr class="divider">
-                <h2 class="product-title">
-                    意象01
-                </h2>
-                <h3 class="product-category">
-                    (意象系列)
-                </h4>
-                <p class="product-desciption">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur provident nesciunt rem harum, modi eum totam, vero reiciendis possimus quos facilis dolores nostrum molestias corporis ratione explicabo repudiandae. Commodi.
-                </p>
+    <div class="footer-area">
+        <div class="discount">
+            <h1><strong>線上購物尊享</strong></h1>
+            <br>
+            <div class="discount-item">
+                <h1>獨家優惠</h1>
+                <h3>不定期推出打折活動</h3>
             </div>
-        </a>
-        <a href="#" class="link product-link">
-            <div class="product-card" data-content="Hello World">
-                <div class="product-img">
-                    <img src="./img/意象/02.jpg" alt="">
-                </div>
-                <hr class="divider">
-                <h2 class="product-title">
-                    意象02
-                </h2>
-                <h3 class="product-category">
-                    (意象系列)
-                </h4>
-                <p class="product-desciption">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur provident nesciunt rem harum, modi eum totam, vero reiciendis possimus quos facilis dolores nostrum molestias corporis ratione explicabo repudiandae. Commodi.
-                </p>
+            <br>
+            <div class="discount-item">
+                <h1>耳釘改耳夹</h1>
+                <h3>加十元就可改耳夾</h3>
             </div>
-        </a>
-        <a href="#" class="link product-link">
-            <div class="product-card" data-content="Hello World">
-                <div class="product-img">
-                    <img src="./img/意象/03.jpg" alt="">
-                </div>
-                <hr class="divider">
-                <h2 class="product-title">
-                    意象03
-                </h2>
-                <h3 class="product-category">
-                    (意象系列)
-                </h4>
-                <p class="product-desciption">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur provident nesciunt rem harum, modi eum totam, vero reiciendis possimus quos facilis dolores nostrum molestias corporis ratione explicabo repudiandae. Commodi.
-                </p>
+            <br>
+            <div class="discount-item">
+                <h1>1000免運</h1>
+                <h3>達到金額送耳釘收納包</h3>
             </div>
-        </a>
+            <br>
+            <div class="discount-item">
+                <h1>安全支付</h1>
+                <h3>採用規定安全防護</h3>
+            </div>
+        </div>
+
+        <div class="footer bg-green">
+            <a href="#" class="link">
+                <div class="go-top">
+                    <i class="fas fa-caret-left"></i>
+                    <h3>回到最上方</h3>
+                </div>
+            </a>
+            <br>
+            <div class="icon-area">
+                <a href="#" class="link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 
